@@ -1,5 +1,5 @@
-export default function SignUp() {
-    return (
-      <div className="flex justify-center ">Hi from sign up page</div>
-    );
-  }
+import SignUp from "@/Components/SignUp";
+
+export default function SignUpPage() {
+  return <SignUp />;
+}
