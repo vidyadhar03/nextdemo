@@ -20,7 +20,7 @@ export default async function Home() {
                    Name: {userData?.name}
                 </div>
                 
-                Email: {userData?.email}
+                Email of user: {userData?.email}
             </div>
         </div>
     </div>
