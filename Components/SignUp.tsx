@@ -9,17 +9,17 @@ export default function SignUp() {
   const router = useRouter();
   return (
     <div className="h-screen flex justify-center items-center">
-      <div className="border rounded-md shadow-md px-8 py-4">
-        <div className="p-1 pb-4 font-bold font-2xl text-center">
-          Register to next demo
+      <div className="border rounded-md shadow-md px-8 py-4 ">
+        <div className="p-1 pb-4 font-bold font-2xl text-center ">
+          Welcome To Next JS World
         </div>
-        <div>
+        <div className="w-full">
           <input
             placeholder="Email"
             onChange={(e) => {
               setEmail(e.target.value);
             }}
-            className="border rounded-md p-1"
+            className="border rounded-md p-1 w-full text-sm"
           />
         </div>
         <div className="mt-2">
@@ -28,12 +28,12 @@ export default function SignUp() {
             onChange={(e) => {
               setPassword(e.target.value);
             }}
-            className="border rounded-md p-1"
+            className="border rounded-md p-1 w-full text-sm"
           />
         </div>
         <div className="flex justify-center">
           <button
-            className="bg-black text-white px-4 py-2 rounded-md mt-2 w-full"
+            className="bg-blue-600 hover:bg-blue-800 text-white px-4 py-1 text-sm rounded-md mt-4 w-full"
             onClick={async () => {
               console.log("started")
 
@@ -50,6 +50,9 @@ export default function SignUp() {
           >
             Sign Up
           </button>
+        </div>
+        <div className="text-xs text-center mt-2 underline text-gray-600 cursor-pointer">
+          Already Registered? Login.
         </div>
       </div>
     </div>
